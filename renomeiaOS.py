@@ -17,8 +17,8 @@ for arquivo in pastaArquivo:
 	for linha in arquivoLido:
 		contadorLinha += 1
 		if(contadorLinha==5):
-			ordemServico = linha.split(" ")
-			ordemServico = ordemServico[0][3:] #posição em que é possivel encontrar a ordem de serviço
+			temp = linha.split(" ")
+			ordemServico = temp[0][3:] #posição em que é possivel encontrar a ordem de serviço
 			antigoNome = arquivo
 			novoNome = ordemServico + ' - '  + str(contadorGeral) + '.txt'
 			print(novoNome)
